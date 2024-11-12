@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: #b7c4c4;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 156px;
+  background-image: url(../imeges/Group-25.png);
+  background-repeat: no-repeat;
+  background-color: #5ca5a5;
+  background-position: right;
+  background-size: 100%;
+}
+
+.main_container {
+  margin-top: 76px;
+}
+
+.search {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: -3px 3px 9px 0px rgba(151, 151, 151, 0.2);
+  border-radius: 4px;
+  padding: 20px 40px;
+
+  position: relative;
+  top: -110px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search span {
+  cursor: pointer;
+  color: #5ca5a5;
+  font-size: 20px;
+}
+
+.search input {
+  width: 90%;
+  border: none;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.job {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: -3px 3px 9px 0px rgba(151, 151, 151, 0.2);
+  margin-bottom: 24px;
+  padding: 32px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.job-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo a img {
+  width: 88px;
+  height: 88px;
+}
+
+.text-info .head-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.head-info h3 {
+  color: #5ca5a5;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16.56px;
+}
+
+.one {
+  display: flex;
+  gap: 8px;
+}
+
+.one .two {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+
+  padding: 8px 7px 3px 7px;
+  border-radius: 12px;
+  background-color: #5ca5a5;
+}
+
+.one .two2 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  color: #fff;
+
+  padding: 8px 7px 3px 7px;
+  border-radius: 12px;
+  background-color: #2b3939;
+}
+
+.text-info .job-title {
+  margin-bottom: 10px;
+}
+
+.text-info .job-title h2 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2b3939;
+}
+
+.text-info .foot-info {
+  display: flex;
+  align-items: center;
+  gap: 18.5px;
+}
+
+.foot-info .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #b7c4c4;
+}
+
+.foot-info .info {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+  color: #7c8f8f;
+}
+
+.job-skills {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.job-skills span {
+  color: #5ca5a5;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: rgba(92, 165, 165, 0.2);
+  padding: 5px 7px 3px 9px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1200) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .job-info {
+    gap: 16px;
+  }
+
+  .text-info .head-info {
+    margin-bottom: 5px;
+    gap: 10px;
+  }
+
+  .job-skills {
+    flex-wrap: wrap;
+  }
+}
