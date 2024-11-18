@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-color: #5ca5a5;
   background-position: right;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .main_container {
@@ -181,6 +181,18 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  .search {
+    width: 88%;
+    margin: 0 auto;
+  }
+
+  .job {
+    padding: 20px 20px;
+    gap: 40px;
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
   .job-info {
     gap: 16px;
   }
@@ -190,7 +202,57 @@ body {
     gap: 10px;
   }
 
+  .text-info .foot-info {
+    gap: 10px;
+  }
+
   .job-skills {
     flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .job-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    background-image: url(..//imeges/Combined-Shape.png);
+  }
+  .search {
+    width: 327px;
+    margin: 0 auto;
+  }
+  .job {
+    margin: 0 auto;
+    width: 327px;
+    position: relative;
+    padding: 32px 24px 24px 24px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-bottom: 40px;
+  }
+
+  .job .logo {
+    position: absolute;
+    top: -25px;
+  }
+
+  .job .logo img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .foot-info {
+    border-bottom: 1px solid #979797;
+    padding-bottom: 16px;
   }
 }
